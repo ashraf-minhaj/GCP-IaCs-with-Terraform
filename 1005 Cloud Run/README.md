@@ -1,0 +1,5 @@
+- Enable the Cloud Run API.
+- Create a simple Node.js application that can be deployed as a serverless stateless container.
+- Containerize your application and upload to Artifact Registry.
+- Deploy a containerized application on Cloud Run.
+- Delete unneeded images to avoid incurring extra storage charges.
