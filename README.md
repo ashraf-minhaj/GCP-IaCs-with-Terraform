@@ -16,7 +16,8 @@
 # List Of Infrastructures:
 - [1001 VPC](./1001%20VPC%20Network%20/)
 - [1002 Compute Engine](./1002%20Compute%20Engine/)
-- [1003 VPC subnetting]
+- [1003 VPC subnetting](./1003%20VPC%20Subnetting/)
+- [1004 VM on Specific Subnet and FireWall]
 - [Cloud Storage]
     - create bucket
     - upload objects to the bucket
