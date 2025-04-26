@@ -14,7 +14,7 @@
 ----------
 
 # List Of Infrastructures:
-- [1001 VPC](./1001%20VPC/)
+- [1001 VPC](./1001%20VPC%20Network%20/)
 - [1002 Compute Engine](./1002%20Compute%20Engine/)
 - [1003 Cloud Storage](./1003%20Cloud%20Storage/)
     - create bucket
@@ -25,6 +25,28 @@
     - serve bucket contents 
     - serve static website
 
+## Configure GCloud CLI for Terraform
+1. set the current project -
+```bash
+gcloud auth list
+gcloud config get-value project
+gcloud config set project utility-cathode-451011-t4 # project id
+```
+
+2. Create a service acc [ convention: sa-{short_project_name}-tf-{Environment} ]
+```bash
+gcloud iam service-accounts create sa-mfp-tf-dev --project utility-cathode-451011-t4 --display-name "Terraform dev acc"
+```
+
+3. Assign role (permission) -
+```bash
+gcloud projects add-iam-policy-binding utility-cathode-451011-t4 --member="serviceAccount:sa-mfp-tf-dev@utility-cathode-451011-t4.iam.gserviceaccount.com" --role="roles/editor"
+```
+
+4. Download the key -
+```bash
+gcloud iam service-accounts keys create ~/.config/gcloud/utility-cathode-451011-t4.json --iam-account=sa-mfp-tf-dev@utility-cathode-451011-t4.iam.gserviceaccount.com
+```
 
 ##### Ashraf Minhaj
 ##### Find me on LinkedIn [Ashraf-Minhaj](https://www.linkedin.com/in/ashraf-minhaj/)
