@@ -16,7 +16,8 @@
 # List Of Infrastructures:
 - [1001 VPC](./1001%20VPC%20Network%20/)
 - [1002 Compute Engine](./1002%20Compute%20Engine/)
-- [1003 Cloud Storage](./1003%20Cloud%20Storage/)
+- [1003 VPC subnetting]
+- [Cloud Storage]
     - create bucket
     - upload objects to the bucket
 - 1004 Cloud Functions
